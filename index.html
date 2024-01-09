@@ -38,11 +38,15 @@
             border: none;
             margin: auto;
         }
-			.profile-table img {
+        
+        .profile-table td {
+            vertical-align: middle; /* Align content vertically in the middle */
+        }
+			  .profile-table img {
         width: 100%;
         max-width: 250px; /* Default max width */
         height: auto;
-    }
+   		  }
         .profile-info {
             color: #191970;
             font-size: 4;
@@ -70,27 +74,15 @@
 <body>
     <div class="centered-content">
         <table class="content-table">
-            <tr>
-                <td>
-                    <div class="hr-line"></div>
-                    <p class="centered-content">
-                        <a href="http://seemajayachandran.com/index.html">Home</a> |
-                        <a href="http://seemajayachandran.com/cv_jayachandran.pdf">Curriculum vitae</a> |
-                        <a href="http://seemajayachandran.com/papers.html">Research</a> |
-                        <a href="http://seemajayachandran.com/writing.html">Popular writing</a>
-                    </p>
-                </td>
-            </tr>
-
-            <tr>
+                    <tr>
                 <td valign="top">
                     <table class="profile-table">
                         <tr>
-                            <td valign="middle"><img src="sj0917.JPG"></td>
-                            <td valign="top">
-                                <p align="center" class="profile-info">Seema Jayachandran</p>
+                            <td><img src="sj0917.JPG"></td>
+                            <td>
+                                <p class="profile-info">Seema Jayachandran</p>
                                 <blockquote>
-                                    <p align="center" class="bio">Professor of Economics and Public Affairs<br>Princeton University<br><br>
+                                    <p class="bio">Professor of Economics and Public Affairs<br>Princeton University<br><br>
                                     126 Julis Romo Rabinowitz Building<br>Princeton NJ 08544<br><br>
                                     jayachandran@princeton.edu</p>
                                 </blockquote>
@@ -99,6 +91,7 @@
                     </table>
                 </td>
             </tr>
+
             <tr>
                 <td valign="top">
                     <p class="bio" align="left">Seema Jayachandran is a Professor of Economics and Public Affairs at Princeton University. Her research focuses on environmental conservation, gender equality, health, and other microeconomic topics in developing countries. <br><br>
