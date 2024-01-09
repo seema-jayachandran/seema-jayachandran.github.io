@@ -38,11 +38,11 @@
             border: none;
             margin: auto;
         }
-        .profile-table img {
-            width: 100%;
-            max-width: 250px;
-            height: auto;
-        }
+			.profile-table img {
+        width: 100%;
+        max-width: 250px; /* Default max width */
+        height: auto;
+    }
         .profile-info {
             color: #191970;
             font-size: 4;
@@ -50,17 +50,21 @@
         .bio {
             font-size: 3;
         }
-        @media screen and (max-width: 600px) {
-            .profile-info {
-                font-size: 2;
-            }
-            .bio {
-                font-size: 2;
-            }
+				@media screen and (max-width: 600px) {
+        .profile-table img {
+            max-width: 300px; /* Larger image on small screens */
         }
-    </style>
-</head>
-    </style>
+
+        .profile-info {
+            font-size: small; /* Smaller font for profile info */
+        }
+
+        .bio {
+            font-size: smaller; /* Smaller font for bio */
+        }
+    }
+</style>
+
 </head>
 
 <body>
