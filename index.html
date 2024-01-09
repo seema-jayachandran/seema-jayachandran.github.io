@@ -7,69 +7,68 @@
         body {
             background-color: #FFFFFF;
             margin: 5px 10px;
-            color: #00000;
+            color: #000000;
             font-family: Lato, sans-serif;
         }
-        a {
+        a:link, a:visited, a:active {
             color: #191970;
             text-decoration: none;
             font-weight: bold;
         }
         .content-table {
             width: 100%;
-            max-width: 710px;
+            max-width: 707px;
             border: none;
             border-collapse: collapse;
             margin: auto;
         }
-        .profile-table {
-            width: 100%;
-            max-width: 650px;
-            border: none;
-            margin: auto;
+        .content-table td {
+            vertical-align: top;
         }
-        .profile-table img {
-            width: 100%;
-            max-width: 241px;
-            height: auto;
+        .centered-content, .left-aligned-content {
+            text-align: center;
         }
-        .profile-info {
-            color: #191970;
-            font-size: 4;
+        .paper-list {
+            list-style-type: decimal;
+            text-align: left;
+            padding-left: 20px;
         }
-        .bio {
-            font-size: 3;
+        .paper-list li {
+            margin-bottom: 20px;
         }
-        hr {
+        .paper-title {
+            font-weight: bold;
+        }
+        .hr-line {
             border: none;
             border-top: 1px solid #191970;
         }
         @media screen and (max-width: 600px) {
-            .profile-info {
-                font-size: 2;
+            body, .paper-list li {
+                font-size: 14px;
             }
-            .bio {
-                font-size: 2;
+            .paper-title {
+                font-size: 16px;
             }
         }
     </style>
 </head>
+
 <body>
-    <center>
+    <div class="centered-content">
         <table class="content-table">
-            <tr> 
-                <td valign="top"> 
-                    <hr>
-                    <div align="left">
-                        <p align="center">
-                            <a href="http://seemajayachandran.com/index.html">Home</a> |
-                            <a href="http://seemajayachandran.com/cv_jayachandran.pdf">Curriculum vitae</a> |
-                            <a href="http://seemajayachandran.com/papers.html">Research</a> |
-                            <a href="http://seemajayachandran.com/writing.html">Popular writing</a>
-                        </p>
-                    </div>
+            <tr>
+                <td>
+                    <div class="hr-line"></div>
+                    <p class="centered-content">
+                        <a href="http://seemajayachandran.com/index.html">Home</a> |
+                        <a href="http://seemajayachandran.com/cv_jayachandran.pdf">Curriculum vitae</a> |
+                        <a href="http://seemajayachandran.com/papers.html">Research</a> |
+                        <a href="http://seemajayachandran.com/writing.html">Popular writing</a>
+                    </p>
                 </td>
             </tr>
+
             <tr>
                 <td valign="top">
                     <table class="profile-table">
