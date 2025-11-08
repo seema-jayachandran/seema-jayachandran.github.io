@@ -35,7 +35,7 @@
         }
         .paper-list li {
             margin-bottom: 2em;
-            line-height: 1.35;
+            line-height: 1.45;
         }
         .paper-title {
             font-weight: bold;
@@ -51,21 +51,25 @@
 				}
             
         /* Gray out everything after the first link inside each paper entry */
-.paper-list li > br ~ * {
-  color: #555;
-  font-weight: normal;
-}
+				.paper-list li > br ~ * {
+  			color: #555;
+  			font-weight: normal;
+				}
 
-/* Make supporting links slightly lighter */
-.paper-list li > br ~ a {
-  color: #666;
-  font-weight: normal;
-}
+		/* Make supporting links slightly lighter */
+			.paper-list li > br ~ a {
+ 			 color: #555;
+  		font-weight: normal;
+			}
+			.paper-list li > br ~ a:hover {
+    	color: #333333;      /* darker gray on hover for contrast */
+			}
 
 /* Ensure hover contrast for accessibility */
-.paper-list li > br ~ a:hover {
-  color: #333;
-}
+			.paper-list li > br ~ a:hover {
+ 		 color: #B04A1A;
+		}
+		
         @media screen and (max-width: 600px) {
         .top-links a {
             font-size: smaller; /* Adjust the font size */
