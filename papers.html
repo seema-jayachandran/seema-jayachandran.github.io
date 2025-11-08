@@ -11,7 +11,7 @@
             font-family: Lato, sans-serif;
         }
         a:link, a:visited, a:active {
-            color: #9A3412    ;
+            color: #9A3412;
             text-decoration: none;
             font-weight: bold;
         }
@@ -35,13 +35,15 @@
         }
         .paper-list li {
             margin-bottom: 2em;
-            line-height: 1.45;
+            line-height: 1.4;
         }
         .paper-title {
             font-weight: bold;
             margin-top: 1.5em;
             margin-bottom: 1.5em;
+            letter-spacing: 0.3px;
         }
+
         .hr-line {
             border: none;
             border-top: 1px solid #9A3412    ;
@@ -49,6 +51,10 @@
         .paper-list li > a:first-child {
     		font-size: 1.03em;  /* Just slightly larger than body text */
 				}
+				
+				.paper-list li > a:first-child:hover {
+  			text-decoration: underline;
+					}
             
         /* Gray out everything after the first link inside each paper entry */
 				.paper-list li > br ~ * {
