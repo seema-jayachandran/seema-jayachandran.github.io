@@ -58,13 +58,19 @@
             border-top: 1px solid #9A3412    ;
         }
 .top-links {
-    margin: 12px 0;
-    padding: 0;
-    text-align: center;
-    line-height: 1.5;
-    display: block;
-    text-indent: 0;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 750px;
+  width: 100%;
+  line-height: 1.5;
 }
+
+.top-links a + a {
+  padding-left: 0.5em;
+  border-left: 1px solid #9A3412;
+  margin-left: 0.5em;
+}
+
         .paper-list li > a:first-child {
     		font-size: 1.03em;  /* Just slightly larger than body text */
 				}
@@ -120,17 +126,20 @@
 </head>
 
 <body>
+	                    <div class="hr-line"></div>
+                    <div style="text-align: center;">
+                    <nav class="top-links">
+                        <a href="http://seemajayachandran.com/index.html">Home</a>
+                        <a href="http://seemajayachandran.com/cv_jayachandran.pdf">CV</a>
+                        <a href="http://seemajayachandran.com/papers.html">Research</a>
+                        <a href="http://seemajayachandran.com/writing.html">Popular writing</a>
+                    </nav>
+                    </div>
     <div class="centered-content">
         <table class="content-table">
             <tr>
                 <td>
-                    <div class="hr-line"></div>
-                    <p class="top-links">
-                        <a href="http://seemajayachandran.com/index.html">Home</a> |
-                        <a href="http://seemajayachandran.com/cv_jayachandran.pdf">CV</a> |
-                        <a href="http://seemajayachandran.com/papers.html">Research</a> |
-                        <a href="http://seemajayachandran.com/writing.html">Popular writing</a>
-                    </p>
+
                 </td>
             </tr>
             
