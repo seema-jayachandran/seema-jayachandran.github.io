@@ -56,11 +56,16 @@
   			text-decoration: underline;
 					}
             
-        /* Gray out everything after the first link inside each paper entry */
-				.paper-list li > br ~ * {
-  			color: #555;
-  			font-weight: normal;
-				}
+.paper-list li {
+  color: #000; /* default for main link */
+}
+
+.paper-list li i,
+.paper-list li br + *,
+.paper-list li a + br + * {
+  color: #555;
+  font-weight: normal;
+}
 
 		/* Make supporting links slightly lighter */
 			.paper-list li > br ~ a {
@@ -78,11 +83,11 @@
 		
         @media screen and (max-width: 600px) {
         .top-links a {
-            font-size: smaller; /* Adjust the font size */
-            padding: 0 5px; /* Adjust padding if needed */
+            font-size: smaller; 
+            padding: 0 5px; 
         }
        .top-links {
-           white-space: nowrap; /* Prevents wrapping */
+           white-space: nowrap; 
        }
         body, .paper-list li {
                 font-size: 14px;
