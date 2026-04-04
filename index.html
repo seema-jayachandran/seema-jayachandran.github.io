@@ -4,6 +4,8 @@
     <title>Seema Jayachandran</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
+
+        /* ===== Base ===== */
         body {
             background-color: #F8F4EC;
             margin: 5px 10px;
@@ -15,6 +17,23 @@
             text-decoration: none;
             font-weight: bold;
         }
+
+        /* ===== Top navigation ===== */
+        .top-links {
+            text-align: center;
+            margin: 20px auto 40px auto;
+            max-width: 750px;
+            width: 100%;
+            line-height: 1.5;
+        }
+        .top-links a {
+            padding: 0 0.5em;
+        }
+        .top-links a + a {
+            border-left: 1px solid #9A3412;
+        }
+
+        /* ===== Layout ===== */
         .content-table {
             width: 100%;
             max-width: 750px;
@@ -24,7 +43,7 @@
         }
         .content-table td {
             vertical-align: top;
-                padding: 0;
+            padding: 0;
         }
         .centered-content, .left-aligned-content {
             text-align: center;
@@ -33,121 +52,108 @@
             border: none;
             border-top: 1px solid #9A3412;
         }
-.top-links {
-  text-align: center;
-  margin: 20px auto 40px auto;
-  max-width: 750px;
-  width: 100%;
-  line-height: 1.5;
-}
 
-.top-links a {
-  padding: 0 0.5em;
-}
-
-.top-links a + a {
-  border-left: 1px solid #9A3412;
-}
-.profile-table {
-    width: 100%;
-    max-width: 650px;
-    border: none;
-    margin: auto;
-    margin-top: 1.5em;
-    margin-bottom: 2em;
-}
-        
-        .profile-table td {
-            vertical-align: middle; /* Align content vertically in the middle */
+        /* ===== Profile table (photo + info block) ===== */
+        .profile-table {
+            width: 100%;
+            max-width: 650px;
+            border: none;
+            margin: auto;
+            margin-top: 1.5em;
+            margin-bottom: 2em;
         }
-.profile-table td:first-child {
-    width: 38%;
-    min-width: 135px;
-    max-width: 280px;
-    padding-right: 15px;
-}
+        .profile-table td {
+            vertical-align: middle;
+        }
+        .profile-table td:first-child {
+            width: 38%;
+            min-width: 125px;
+            max-width: 280px;
+            padding-right: 15px;
+        }
+        .profile-table td:last-child {
+            width: 62%;
+            min-width: 135px;
+            max-width: 300px;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: center;
+        }
+        .profile-table img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .profile-table blockquote {
+            margin: 0;
+            padding: 0;
+        }
 
-.profile-table td:last-child {
-    width: 62%;
-    min-width: 145px;
-    max-width: 300px;
-    padding-left: 10px;
-     padding-right: 10px;
-    text-align: center;
-}
-.profile-table img {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-.profile-info {
-    color: #9A3412;
-    font-size: 1.3em;
-    margin: 0 0 0.5em 0;
-    font-weight: bold;
-    text-align: center;
-}
+        /* ===== Profile info (name + bio text) ===== */
+        .profile-info {
+            color: #9A3412;
+            font-size: 1.3em;
+            margin: 0 0 0.5em 0;
+            font-weight: bold;
+            text-align: center;
+        }
         .bio {
             font-size: 3;
             line-height: 1.4;
         }
-.profile-table blockquote {
-    margin: 0;
-    padding: 0;
-}
-		.profile-table strong {
-    color: #AD3B04;
-    font-size: 1.05em;
-			}
-@media screen and (max-width: 600px) {
-				.top-links a {
-        font-size: smaller;
-        }
-       .top-links {
-        white-space: nowrap; 
-       }
-       body {
-  padding: 0 10px;
-}
-        .profile-table img {
-            max-width: 220px; 
+        .profile-table strong {
+            color: #AD3B04;
+            font-size: 1.05em;
         }
 
-        .profile-info {
-            font-size: small; /* Smaller font for profile info */
+        /* ===== Mobile ===== */
+        @media screen and (max-width: 600px) {
+            .top-links a {
+                font-size: smaller;
+            }
+            .top-links {
+                white-space: nowrap;
+            }
+            body {
+                padding: 0 10px;
+            }
+            .profile-table img {
+                max-width: 220px;
+            }
+            .profile-info {
+                font-size: small;
+            }
+            .bio {
+                font-size: smaller;
+                padding: 0 2px;
+            }
         }
 
-        .bio {
-            font-size: smaller; /* Smaller font for bio */
-            padding: 0 4px;
-        }
-    }
-</style>
-
+    </style>
 </head>
 
 <body>
-	                    <div class="hr-line"></div>
-               <div style="text-align: center;">
-                    <nav class="top-links">
-                        <a href="http://seemajayachandran.com/index.html">Home</a>
-                        <a href="http://seemajayachandran.com/cv_jayachandran.pdf">CV</a>
-                        <a href="http://seemajayachandran.com/papers.html">Research</a>
-                        <a href="http://seemajayachandran.com/writing.html">Popular writing</a>
-                    </nav>
-                    </div>
-	    <div class="centered-content">
+    <div class="hr-line"></div>
+    <div style="text-align: center;">
+        <nav class="top-links">
+            <a href="http://seemajayachandran.com/index.html">Home</a>
+            <a href="http://seemajayachandran.com/cv_jayachandran.pdf">CV</a>
+            <a href="http://seemajayachandran.com/papers.html">Research</a>
+            <a href="http://seemajayachandran.com/writing.html">Popular writing</a>
+        </nav>
+    </div>
+
+    <div class="centered-content">
         <table class="content-table">
             <tr>
                 <td>
-
-
                 </td>
             </tr>
-            
+        </table>
+
         <table class="content-table">
-                    <tr>
+            <tr>
                 <td valign="top">
                     <table class="profile-table">
                         <tr>
@@ -157,8 +163,7 @@
                                 <blockquote>
                                     <p class="bio">Kenneth J. Boudreaux '65 Professor of Economics and Public Affairs<br>Princeton University<br><br>
                                     126 Julis Romo Rabinowitz Building<br>Princeton NJ 08544<br><br>
-                                   jayachandran@princeton.edu<br><br>
-                                    
+                                    jayachandran@princeton.edu<br><br>
                                     <strong>I am on sabbatical for 2025-26</strong></p>
                                 </blockquote>
                             </td>
@@ -178,9 +183,17 @@
                 <td valign="top"><hr></td>
             </tr>
         </table>
-    </center>
-    
+    </div>
+
 <!-- Start of StatCounter Code -->
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" language="javascript">
-var sc_project=1700120; 
-var sc_invi
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" language="javascript">
+var sc_project=1700120;
+var sc_invisible=0;
+var sc_partition=16;
+var sc_security="cc7247ae";
+</script>
+<script type="text/javascript" language="javascript" src="http://www.statcounter.com/counter/counter.js"></script><noscript><a href="http://www.statcounter.com/" target="_blank"><img src="http://c17.statcounter.com/counter.php?sc_project=1700120&amp;java=0&amp;security=cc7247ae&amp;invisible=0" alt="website metrics" border="0"></a></noscript>
+<!-- End of StatCounter Code -->
+
+</body>
+</html>
